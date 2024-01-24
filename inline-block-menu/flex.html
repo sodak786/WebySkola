@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                margin: 50px;
+            }
+            .container{
+                background: white;
+                display: flex;
+                border: 5px solid black;
+                padding: 20px;
+                flex-wrap: wrap;
+                overflow: hidden;
+            }
+            .col{
+                line-height: 15px;
+                color: white;
+                background: black;
+                padding: 50px;
+                margin: 5px;
+                overflow-x: auto;   
+                
+            }
+            .col-1{
+                flex: 1;
+            }
+            .col-2{
+                flex: 2;
+            }
+            .col-3{
+                flex: none;
+            }
+
+            @media(max-width:400px){
+                .container{
+                    flex-direction: column;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <p class="col col-1">First is loooooooooooooooong.</p>
+            <p class="col col-2">Second is shorteeeeeeeeeeeeeeeeeeeeeeeeeeeeeee<br>eeeeeeeeeeeee</br>eeeeeer</p>
+            <p class="col col-3">Third is the longest</p>       
+        </div>
+    </body>
+</html>

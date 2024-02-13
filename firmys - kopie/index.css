@@ -1,0 +1,20 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body header nav h1{
+    justify-content: center;
+    display: flex;
+    padding: 20px;
+    font-size: 30px;
+}
+body header nav ul{
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    font-size: 20px;
+    list-style: none;
+}
+body header nav ul li a{
+    text-decoration: none;
+}

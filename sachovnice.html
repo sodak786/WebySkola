@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            body main{
+                .kontank{
+                    margin-bottom: 50px;
+                }
+                .kontank, .kontank2{
+                    display: flex;
+                    flex-wrap: wrap;
+                    max-width: 640px;
+                    .kostka{
+                        width: 80px;
+                        height: 80px;
+                        text-align: center;
+                        line-height: 80px;
+                    }
+                    
+                    .kostka:nth-child(1), :nth-child(3), :nth-child(5), :nth-child(7), :nth-child(10), :nth-child(12), :nth-child(14), :nth-child(16){
+                        background-color: rgb(225, 225, 225);
+                    }
+                    .kostka:nth-child(2), :nth-child(4), :nth-child(6), :nth-child(8), :nth-child(9), :nth-child(11), :nth-child(13), :nth-child(15){
+                        background-color: rgb(83, 83, 83);
+                    }
+
+
+                    .prvnicast{
+                        display: flex;
+                        flex-wrap: wrap;
+                    }
+                    .druhacast{
+                        display: flex;
+                        flex-wrap: wrap-reverse;
+                    }
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <main>
+            <div class="kontank">
+                <div class="kostka prvniCast">1</div>
+                <div class="kostka prvniCast">2</div>
+                <div class="kostka prvniCast">3</div>
+                <div class="kostka prvniCast">4</div>
+                <div class="kostka prvniCast">5</div>
+                <div class="kostka prvniCast">6</div>
+                <div class="kostka prvniCast">7</div>
+                <div class="kostka prvniCast">8</div>
+                <div class="kostka druhaCast">9</div>
+                <div class="kostka druhaCast">10</div>
+                <div class="kostka druhaCast">11</div>
+                <div class="kostka druhaCast">12</div>
+                <div class="kostka druhaCast">13</div>
+                <div class="kostka druhaCast">14</div>
+                <div class="kostka druhaCast">15</div>
+                <div class="kostka druhaCast">16</div>
+            </div>
+
+            <div class="kontank2">
+                <div class="prvnicast">
+                    <div class="kostka">1</div>
+                    <div class="kostka">2</div>
+                    <div class="kostka">3</div>
+                    <div class="kostka">4</div>
+                    <div class="kostka">5</div>
+                    <div class="kostka">6</div>
+                    <div class="kostka">7</div>
+                    <div class="kostka">8</div>
+                </div>
+                <div class="druhacast">
+                    <div class="kostka" style="background-color: rgb(83, 83, 83);">16</div>
+                    <div class="kostka" style="background-color: rgb(225, 225, 225);">15</div>
+                    <div class="kostka" style="background-color: rgb(83, 83, 83);">14</div>
+                    <div class="kostka" style="background-color: rgb(225, 225, 225);">13</div>
+                    <div class="kostka" style="background-color: rgb(83, 83, 83);">12</div>
+                    <div class="kostka" style="background-color: rgb(225, 225, 225);">11</div>
+                    <div class="kostka" style="background-color: rgb(83, 83, 83);">10</div>
+                    <div class="kostka" style="background-color: rgb(225, 225, 225);">9</div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

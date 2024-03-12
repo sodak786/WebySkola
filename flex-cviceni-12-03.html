@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+            }
+            .flex-container, .flex-container-2{
+                height: 60px;
+                width: 100vw;
+                background-color: rgb(110, 110, 110);
+                display: flex;
+                :nth-child(1){
+                    background-color: blue;
+                }
+                :nth-child(2){
+                    background-color: green;
+                }
+                :nth-child(3){
+                    background-color: orange;
+                }
+            }
+            .flex-container-3{
+                height: 60px;
+                width: 100vw;
+                background-color: rgb(110, 110, 110);
+                display: flex;
+                :nth-child(1){
+                    background-color: blue;
+                    width: 50vw;
+                }
+                :nth-child(2){
+                    background-color: green;
+                    width: 27vw;
+                }
+                :nth-child(3){
+                    background-color: red;
+                    width: 23vw;
+                }
+            }
+            .items{
+                line-height: 60px;
+                color: aliceblue;
+                width: 140px;
+                text-align: center;
+                font-size: large;
+                font-family:Arial, Helvetica, sans-serif;
+            }
+            .flex-container-2{
+                flex-direction: row-reverse;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <div class="flex-container" style="margin-bottom: 20px;">
+                <div class="items">Flex item 1</div>
+                <div class="items">Flex item 2</div>
+                <div class="items">Flex item 3</div>
+            </div>
+            <div class="flex-container-2" style="margin-bottom: 20px;">
+                <div class="items">Flex item 1</div>
+                <div class="items">Flex item 2</div>
+                <div class="items">Flex item 3</div>
+            </div>
+            <div class="flex-container-3">
+                <div class="items">Flex item with a lot of content</div>
+                <div class="items">Flex item</div>
+                <div class="items">Flex item</div>
+            </div>
+        </main>
+    </body>
+</html>
